@@ -6,6 +6,13 @@
   margin-bottom: rem(25);
 }
 
+.breadcrumb-mobile {
+  font-size: rem(14);
+  color: $darker-gray;
+  margin-bottom: rem(25);
+  margin-left: rem(15);
+}
+
 .post {
   &__title {
     h1 {
@@ -65,5 +72,87 @@
       padding: rem(10);
       background: $light-gray;
     }
+  }
+}
+
+// mobile
+
+.post-mobile {
+  &__title {
+    h1 {
+      font-size: rem(25);
+      margin-bottom: rem(10);
+      margin-left: rem(15);
+      margin-right: rem(10);
+    }
+  }
+
+  &__writer {
+    p {
+      font-size: rem(14);
+      color: $blue;
+      font-weight: 700;
+      margin-left: rem(15);
+    }
+  }
+
+  &__date {
+    margin-bottom: rem(25);
+    margin-left: rem(15);
+
+    date {
+      font-size: rem(12);
+      color: $darker-gray;
+      font-weight: 600;
+    }
+  }
+
+  &__article {
+    figure {
+      margin-bottom: rem(28);
+
+      img {
+        width: 100%;
+      }
+      figcaption {
+        font-size: rem(14);
+        font-weight: 600;
+        margin-left: rem(8);
+        color: $darker-gray;
+      }
+    }
+
+    &__text {
+      display: block;
+      margin-left: rem(15);
+      margin-right: rem(10);
+      p {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    gap: rem(10);
+    margin-bottom: rem(60);
+    margin-left: rem(15);
+
+    &__tag {
+      width: 100%;
+      margin-top: rem(30);
+      max-width: fit-content;
+      padding: rem(10);
+      background: $light-gray;
+    }
+  }
+}
+
+.mobile-content__terkait {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  &__title {
+    font-weight: 700;
   }
 }
