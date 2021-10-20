@@ -5,7 +5,7 @@
     margin-left: rem(15);
     margin-bottom: rem(50);
     margin-right: rem(15);
-    .mobile-content__title {
+    &__title {
       width: 100%;
       max-width: rem(600);
       // background: $blue;
@@ -31,7 +31,7 @@
       }
     }
 
-    .mobile-content__tags {
+    &__tags {
       display: flex;
       gap: rem(10);
       flex-wrap: wrap;
@@ -41,6 +41,109 @@
         font-size: rem(14);
         padding: rem(15);
         background: $light-gray;
+      }
+    }
+
+    &__articles {
+      display: flex;
+      flex-direction: column;
+      gap: rem(25);
+      margin-bottom: rem(70);
+
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: rem(12);
+        img {
+          //   @include max-width(rem(130));
+          height: rem(110);
+          width: rem(130);
+        }
+
+        .content__details {
+          display: flex;
+          flex-direction: column;
+
+          .category {
+            font-size: rem(13);
+            color: $blue;
+            font-weight: 700;
+          }
+
+          .detail__title {
+            font-size: rem(15);
+            font-weight: 700;
+            margin-bottom: rem(5);
+          }
+
+          .detail__info {
+            font-size: rem(10);
+          }
+        }
+      }
+
+      .all-article-mobile {
+        margin-top: rem(10);
+        align-self: center;
+        background: $blue;
+        color: white;
+        border: none;
+        outline: none;
+        padding: rem(10) rem(15) rem(9) rem(15);
+        font-size: rem(14);
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-bottom: rem(70);
+      }
+    }
+  }
+  .topik-khusus-mobile {
+    background: $light-gray;
+    margin: rem(70) 0;
+    &__title {
+      background: $blue;
+      width: fit-content;
+      padding: rem(10) rem(50);
+      h1 {
+        font-size: rem(18);
+        color: $white;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      overflow-x: auto;
+      margin-top: rem(17);
+      padding-left: rem(15);
+      padding-right: rem(15);
+      padding-bottom: rem(30);
+      gap: rem(25);
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+
+      .topik-khusus-mobile__card {
+        @include max-width(rem(169));
+
+        &__details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: rem(8);
+
+          .topik-khusus-mobile-article {
+            font-size: rem(14);
+            font-weight: 700;
+            text-align: center;
+          }
+
+          .topik-khusus-mobile-category {
+            font-size: rem(13);
+            color: $blue;
+            font-weight: 600;
+          }
+        }
       }
     }
   }

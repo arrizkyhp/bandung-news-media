@@ -74,3 +74,84 @@ footer {
     }
   }
 }
+
+.footer-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  &__logo {
+    @include logo-sm();
+    text-align: center;
+  }
+
+  p {
+    font-size: rem(15);
+    text-align: center;
+    max-width: rem(250);
+    text-align: center;
+    margin-top: rem(10);
+    margin-bottom: rem(25);
+  }
+
+  .social-media {
+    h2 {
+      font-size: rem(16);
+      text-align: center;
+    }
+    &__icons {
+      display: flex;
+      gap: rem(18);
+      a {
+        font-size: rem(30);
+      }
+    }
+  }
+
+  .footer-kategori-mobile {
+    margin-top: rem(70);
+    margin-bottom: rem(50);
+    h3 {
+      font-size: rem(18);
+      text-align: center;
+      margin-bottom: rem(20);
+    }
+
+    .kategori-lists {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      gap: rem(30);
+
+      .kategori {
+        display: flex;
+        gap: rem(10);
+        flex-direction: column;
+
+        a {
+          font-size: rem(15);
+        }
+      }
+    }
+  }
+
+  .footer-bottom-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(40);
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__copyright {
+      font-size: rem(14);
+      margin-bottom: rem(20);
+    }
+  }
+}
