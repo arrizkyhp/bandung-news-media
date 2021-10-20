@@ -1,6 +1,6 @@
 @use "../utils" as *;
 
-nav {
+.nav {
   margin-top: rem(20);
 
   .top-nav {
@@ -75,6 +75,46 @@ nav {
         &:hover {
           color: $cyan;
         }
+      }
+    }
+  }
+}
+
+// Mobile
+
+.nav-mobile {
+  .top-nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(15);
+    padding-top: rem(10);
+
+    &__logo {
+      @include logo-sm();
+      margin-left: rem(10);
+    }
+  }
+  .bottom-nav-mobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(20);
+    // width: 400px;
+    background: $blue;
+    height: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0;
+    padding-left: rem(15);
+    padding-right: rem(15);
+
+    li {
+      a {
+        display: inline-block;
+        color: $white;
+        font-size: rem(14);
+        font-weight: 700;
       }
     }
   }

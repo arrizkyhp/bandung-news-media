@@ -1,0 +1,47 @@
+@use "../utils" as *;
+
+.mobile {
+  .mobile-content {
+    margin-left: rem(15);
+    margin-bottom: rem(50);
+    margin-right: rem(15);
+    .mobile-content__title {
+      width: 100%;
+      max-width: rem(600);
+      // background: $blue;
+      position: relative;
+      width: fit-content;
+      text-transform: uppercase;
+      margin-bottom: rem(20);
+
+      h1 {
+        color: $black;
+        font-size: rem(18);
+        position: relative;
+
+        &::after {
+          content: "";
+          height: rem(4);
+          width: rem(210);
+          background: $blue;
+          position: absolute;
+          left: 0;
+          bottom: rem(-5);
+        }
+      }
+    }
+
+    .mobile-content__tags {
+      display: flex;
+      gap: rem(10);
+      flex-wrap: wrap;
+
+      .tag {
+        width: fit-content;
+        font-size: rem(14);
+        padding: rem(15);
+        background: $light-gray;
+      }
+    }
+  }
+}

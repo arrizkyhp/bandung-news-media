@@ -81,3 +81,46 @@
     }
   }
 }
+
+.featured-mobile {
+  position: relative;
+  .img-big-mobile {
+    @include max-width(rem(310));
+  }
+  .box-mobile {
+    position: absolute;
+    @include max-width(rem(775));
+    background: linear-gradient(358.21deg, #000000 1.7%, rgba(196, 196, 196, 0) 122.29%);
+    height: rem(277);
+    border-radius: rem(8) rem(8) rem(0) rem(0);
+    top: 0;
+    bottom: 0;
+
+    &__content {
+      position: absolute;
+      z-index: 9999;
+      padding-left: rem(25);
+      h1 {
+        color: white;
+        bottom: 0;
+        padding-bottom: rem(10);
+        font-size: rem(18);
+      }
+
+      &__detail {
+        color: #fff;
+        font-weight: 400;
+        font-size: rem(12);
+        padding-bottom: rem(18);
+
+        span {
+          background-color: $blue;
+          padding: rem(2) rem(5);
+          font-size: rem(14);
+          border-radius: rem(3);
+          font-weight: rem(700);
+        }
+      }
+    }
+  }
+}

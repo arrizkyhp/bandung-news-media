@@ -18,3 +18,16 @@
     gap: rem(150);
   }
 }
+
+.background {
+  background: $light-gray;
+  height: 100vh;
+}
+.mobile-container {
+  width: 100vw;
+  // margin-right: auto;
+  // margin-left: auto;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  background: $white;
+}
