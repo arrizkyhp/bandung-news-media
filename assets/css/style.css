@@ -446,13 +446,121 @@ main {
   margin-top: 1.25rem;
 }
 main .section-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 1.5625rem;
+}
+main .section-top .left-content {
+  position: relative;
 }
 main .section-bottom {
   margin-top: 3.4375rem;
+}
+
+.kategori-header h1 {
+  font-size: 2.25rem;
+  color: #0077b6;
+  margin-bottom: 1.875rem;
+}
+
+.kategori-featured {
+  position: relative;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+}
+.kategori-featured .img-big {
+  border-radius: 8px 8px 8px 8px;
+  width: 48.4375rem;
+  height: 23.25rem;
+}
+.kategori-featured .box {
+  position: absolute;
+  width: 100%;
+  max-width: 48.4375rem;
+  background: linear-gradient(358.21deg, #000000 1.7%, rgba(196, 196, 196, 0) 122.29%);
+  height: 23.375rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  top: 0;
+  bottom: 0;
+}
+.kategori-featured .box__content {
+  position: absolute;
+  z-index: 9999;
+  padding-left: 1.5625rem;
+}
+.kategori-featured .box__content h1 {
+  color: white;
+  bottom: 0;
+  padding-bottom: 0.625rem;
+}
+.kategori-featured .box__content__detail {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding-bottom: 1.5625rem;
+}
+.kategori-featured .box__content__detail span {
+  background-color: #0077b6;
+  padding: 0.125rem 0.3125rem;
+  font-size: 0.875rem;
+  border-radius: 0.1875rem;
+  font-weight: 43.75rem;
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  color: #848484;
+  margin-bottom: 1.5625rem;
+}
+
+.post__title h1 {
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+}
+.post__writer p {
+  font-size: 0.875rem;
+  color: #0077b6;
+  font-weight: 700;
+}
+.post__date {
+  margin-bottom: 1.5625rem;
+}
+.post__date date {
+  font-size: 0.75rem;
+  color: #848484;
+  font-weight: 600;
+}
+.post__article figure {
+  margin-bottom: 1.75rem;
+}
+.post__article figure img {
+  width: 48.4375rem;
+}
+.post__article figure figcaption {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #848484;
+}
+.post__article__text {
+  display: block;
+}
+.post__article__text p {
+  margin-bottom: 1.25rem;
+}
+.post__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+}
+.post__tags__tag {
+  width: 100%;
+  margin-top: 1.875rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0.625rem;
+  background: #f1f1f1;
 }
 
 footer {

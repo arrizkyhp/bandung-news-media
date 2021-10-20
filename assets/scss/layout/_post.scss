@@ -1,0 +1,69 @@
+@use "../utils" as *;
+
+.breadcrumb {
+  font-size: rem(14);
+  color: $darker-gray;
+  margin-bottom: rem(25);
+}
+
+.post {
+  &__title {
+    h1 {
+      font-size: rem(32);
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__writer {
+    p {
+      font-size: rem(14);
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+
+  &__date {
+    margin-bottom: rem(25);
+
+    date {
+      font-size: rem(12);
+      color: $darker-gray;
+      font-weight: 600;
+    }
+  }
+
+  &__article {
+    figure {
+      margin-bottom: rem(28);
+
+      img {
+        width: rem(775);
+      }
+      figcaption {
+        font-size: rem(14);
+        font-weight: 600;
+        color: $darker-gray;
+      }
+    }
+
+    &__text {
+      display: block;
+      p {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    gap: rem(10);
+
+    &__tag {
+      width: 100%;
+      margin-top: rem(30);
+      max-width: fit-content;
+      padding: rem(10);
+      background: $light-gray;
+    }
+  }
+}

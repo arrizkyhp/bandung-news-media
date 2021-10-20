@@ -4,8 +4,13 @@ main {
   margin-top: rem(20);
 
   .section-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: rem(25);
+
+    .left-content {
+      position: relative;
+    }
   }
 
   .section-bottom {
