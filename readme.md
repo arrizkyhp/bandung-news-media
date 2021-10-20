@@ -1,4 +1,4 @@
-### Link Test
+### Technical Test Fronted Developer | Arrizky Hasya Pratama
 
 1.  Halaman HomePage news
     🚀 [Home | Dektop](https://arrizkyhp.github.io/bandung-news-media/)
