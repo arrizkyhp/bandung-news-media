@@ -1,0 +1,81 @@
+@use "../utils" as *;
+
+nav {
+  margin-top: rem(20);
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(15);
+
+    &__logo {
+      @include logo-xl();
+    }
+
+    &__left {
+      display: flex;
+
+      date {
+        color: $dark-gray;
+        font-size: rem(14);
+        margin-right: rem(23);
+        align-self: center;
+      }
+
+      .search {
+        position: relative;
+
+        &__input {
+          width: rem(278);
+          height: rem(31);
+          border: none;
+          border-bottom: 2px solid $blue;
+          font-family: $base-font-open;
+          font-size: rem(14);
+          outline: none;
+          padding: 0 rem(40) 0 rem(15);
+        }
+
+        &__button {
+          cursor: pointer;
+          width: rem(35);
+          height: rem(31);
+          position: absolute;
+          top: 0;
+          right: rem(5);
+
+          background-color: transparent;
+          outline: none;
+          border: none;
+
+          &::after {
+            content: url(../images/search-icon.svg);
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-nav {
+    background: $blue;
+    display: flex;
+    padding: rem(12) 0 rem(17) 0;
+    border-radius: rem(3);
+    justify-content: center;
+    gap: rem(25);
+
+    li {
+      color: $white;
+      font-weight: 700;
+      font-size: rem(14);
+
+      a {
+        transition: all 0.3s ease;
+        &:hover {
+          color: $cyan;
+        }
+      }
+    }
+  }
+}

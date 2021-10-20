@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+main {
+  margin-top: rem(20);
+
+  .section-top {
+    display: flex;
+    gap: rem(25);
+  }
+
+  .section-bottom {
+    margin-top: rem(55);
+  }
+}

@@ -1,0 +1,58 @@
+@use "../utils" as *;
+
+.topik-khusus {
+  background: $light-gray;
+  border-radius: rem(8);
+  padding: rem(30) rem(47);
+  margin-bottom: rem(55);
+
+  &__title {
+    position: relative;
+    margin-bottom: rem(30);
+
+    h1 {
+      font-size: rem(30);
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 5px;
+      background: $light-blue;
+      position: absolute;
+      bottom: rem(-8);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(34);
+    width: 100%;
+
+    .topik-khusus__card {
+      @include max-width(rem(300));
+
+      &__image {
+        @include max-width(rem(300));
+      }
+
+      &__details {
+        margin-top: rem(10);
+        display: flex;
+        flex-direction: column;
+        gap: rem(5);
+
+        .topik-khusus-article {
+          font-size: rem(16);
+          font-weight: 700;
+        }
+
+        .topik-khusus-category {
+          color: $blue;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

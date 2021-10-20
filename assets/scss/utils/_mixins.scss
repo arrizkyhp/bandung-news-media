@@ -1,0 +1,56 @@
+@use "functions" as *;
+@use "variables" as *;
+
+@mixin flex-centering() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-centering() {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin max-width($size) {
+  width: 100%;
+  max-width: $size;
+}
+
+@mixin logo-xl() {
+  font-size: rem(36);
+  color: $cyan;
+
+  span {
+    font-size: rem(24);
+    color: $black;
+  }
+}
+
+@mixin logo-md() {
+  font-size: rem(28);
+  color: $cyan;
+
+  span {
+    font-size: rem(16);
+    color: $black;
+  }
+}
+
+@mixin container-title() {
+  width: 100%;
+  max-width: rem(600);
+  background: $blue;
+  position: relative;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: rem(10) rem(20);
+  border-radius: rem(8) rem(8) rem(0) rem(0);
+
+  h1 {
+    color: $white;
+    font-size: rem(16);
+  }
+}

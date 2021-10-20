@@ -1,0 +1,20 @@
+@use "../utils" as *;
+
+.square {
+  width: 100%;
+  height: rem(12);
+  background: $blue;
+}
+
+.container {
+  width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &.footer {
+    display: flex;
+    gap: rem(150);
+  }
+}

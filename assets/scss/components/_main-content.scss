@@ -1,0 +1,79 @@
+@use "../utils" as *;
+
+.main-container {
+  @include max-width(rem(720));
+  display: flex;
+  flex-direction: column;
+
+  &.top {
+    margin-top: rem(70);
+  }
+
+  &__title {
+    margin-bottom: rem(25);
+    @include container-title();
+
+    h1 {
+      color: $white;
+      font-size: rem(16);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(25);
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      gap: rem(25);
+      .content__image {
+        @include max-width(rem(250));
+      }
+
+      .content__details {
+        .detail__title {
+          font-size: rem(24);
+          font-weight: 700;
+
+          &:hover {
+            color: $cyan;
+          }
+        }
+        .detail__info {
+          margin-top: rem(8);
+          display: flex;
+          align-items: center;
+          gap: rem(10);
+
+          .category {
+            font-size: rem(16);
+            color: $blue;
+            font-weight: 700;
+          }
+
+          date {
+            font-size: rem(12);
+          }
+        }
+      }
+    }
+  }
+
+  .all-article {
+    margin-top: rem(40);
+    align-self: center;
+    background: $blue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: rem(10) rem(15) rem(9) rem(15);
+    font-size: rem(18);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: rem(70);
+  }
+}
